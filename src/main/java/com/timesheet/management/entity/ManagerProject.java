@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "ManagerProjects")
+@Table(name = "manager_projects")
 @Getter
 @Setter
 @RequiredArgsConstructor
