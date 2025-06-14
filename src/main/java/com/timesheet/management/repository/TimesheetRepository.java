@@ -23,7 +23,7 @@ public interface TimesheetRepository extends JpaRepository<Timesheet, Integer> {
         JOIN Project p ON e.project = p
         WHERE p.id = :projectId
         GROUP BY p.id, u.id, t.startDate, t.status
-        ORDER BY u.id, t.startDate
+        ORDER BY u.id, t.startDate desc
     """)
     List<ProjectSummaryDTO> getProjectSummary(@Param("projectId") Integer projectId);
 }
