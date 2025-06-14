@@ -34,8 +34,10 @@ public class TimesheetEntry {
     private LocalDate date;
 
     @Column(name = "hours_worked", nullable = false)
-    private BigDecimal hoursWorked;
+    private Integer hoursWorked;
 
     private String comments;
+
+	
 
 }

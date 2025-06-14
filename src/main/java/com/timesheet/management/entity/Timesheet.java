@@ -1,6 +1,7 @@
 package com.timesheet.management.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -12,6 +13,7 @@ import java.util.List;
 @Table(name = "Timesheets")
 @Getter
 @Setter
+@Data
 @RequiredArgsConstructor
 public class Timesheet {
     @Id
@@ -37,5 +39,8 @@ public class Timesheet {
     public enum Status {
         DRAFT, SUBMITTED, APPROVED, REJECTED
     }
+
+	
+	
 
 }
