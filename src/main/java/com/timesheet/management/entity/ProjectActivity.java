@@ -3,7 +3,7 @@ package com.timesheet.management.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "ProjectActivities")
+@Table(name = "project_activities")
 public class ProjectActivity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
